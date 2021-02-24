@@ -8,7 +8,7 @@ export default class Contact extends Component {
   render() {
     return (
       <section className="Contact">
-
+        <div>Contact</div>
       </section>
     );
   }

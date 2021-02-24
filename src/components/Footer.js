@@ -7,9 +7,9 @@ import './../styles/Footer.css'
 export default class Footer extends Component {
   render() {
     return (
-      <section className="Footer">
-
-      </section>
+      <footer className="Footer">
+        <div>Footer</div>
+      </footer>
     );
   }
 }

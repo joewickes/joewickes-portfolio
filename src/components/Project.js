@@ -8,7 +8,7 @@ export default class Project extends Component {
   render() {
     return (
       <section className="Project">
-
+        <div>Project</div>
       </section>
     );
   }

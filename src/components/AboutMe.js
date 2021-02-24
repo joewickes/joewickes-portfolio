@@ -8,7 +8,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <section className="AboutMe">
-
+        <div>AboutMe</div>
       </section>
     );
   }
