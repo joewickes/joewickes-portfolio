@@ -1,0 +1,62 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contact h2 {
+  font-size: 30px;
+}
+
+.c-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-icons-container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.c-icons-container a {
+  color: inherit;
+}
+
+.faGithubsquare {
+  font-size: 30px;
+}
+
+.faLinkedin {
+  font-size: 30px;
+}
+
+.faListalt {
+  font-size: 30px;
+}
+
+.faGithubsquare:hover {
+  color: #d10102;
+  cursor: pointer;
+}
+
+.faLinkedin:hover {
+  color: #d10102;
+  cursor: pointer;
+}
+
+.faListalt:hover {
+  color: #d10102;
+  cursor: pointer;
+}
+
+.Contact div p a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #d10102;
+}
+
+.Contact h2 {
+  padding: 50px 0px 15px 0px;
+  color: #d10102;
+}

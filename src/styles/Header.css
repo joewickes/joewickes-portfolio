@@ -14,7 +14,7 @@
   color: #000;
 }
 
-.l-header div a {
+.l-header div p {
   position: relative;
   font-weight: 200;
   cursor: pointer;
@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 
-.l-header a:before {
+.l-header p:before {
   content: "";
   position: absolute;
   width: 0;
@@ -34,7 +34,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-.l-header a:hover:before {
+.l-header p:hover:before {
   visibility: visible;
   width: 100%;
+}
+
+@media all and (min-width: 800px) {
+  .l-header nav {
+    width: 25vw;
+  }
 }

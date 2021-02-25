@@ -27,12 +27,12 @@ export default class Project extends Component {
           <h3>{this.props.title}</h3>
           <p className="description">{this.props.description}</p>
           <p><b>Tech Stack Used:</b> {makeTechString(this.props.techUsed)}</p>
-          <a href={this.props.liveLink} target="_blank"><button>See it in Action</button></a>
-          <a href={this.props.frontEndRepo} target="_blank">Client Side Repo</a>
-          {this.props.backEndRepo ? (<a href={this.props.backEndRepo} target="_blank">Server Side Repo</a>) : null}
+          <a href={this.props.liveLink} rel="noreferrer" target="_blank"><button>See it in Action</button></a>
+          <a href={this.props.frontEndRepo} rel="noreferrer" target="_blank">Client Side Repo</a>
+          {this.props.backEndRepo ? (<a href={this.props.backEndRepo} rel="noreferrer" target="_blank">Server Side Repo</a>) : null}
         </div>
         <div className="proj-img">
-          <img src={this.props.screenshot} />
+          <img src={this.props.screenshot} alt={this.props.title} />
         </div>
       </li>
     );

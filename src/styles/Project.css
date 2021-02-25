@@ -1,7 +1,8 @@
 .Project {
   display: flex;
+  flex-direction: column-reverse;
   width: 50%;
-  margin: 0px;
+  margin: 0px 0px 50px 0px;
   width: 100%;
 }
 
@@ -13,18 +14,19 @@ img {
   flex: 2;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-right: 30px;
+  padding: 0px 30px;
 }
 
 .proj-left h3 {
   font-size: 25px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .proj-left p {
-  text-align: right;
+  text-align: center;
   font-weight: 200;
 }
 
@@ -38,7 +40,6 @@ img {
 
 .proj-img {
   flex: 1;
-  display: flex;
   flex-direction: column;
   padding: 30px;
 }
@@ -52,4 +53,20 @@ img {
 
 .proj-left button:hover {
   cursor: pointer;
+  border-color: #d10102;
+
+}
+
+@media all and (min-width: 800px) {
+  .Project {
+    flex-direction: row;
+  }
+
+  .proj-left {
+    align-items: flex-end;
+  }
+
+  .proj-left p {
+    text-align: right;
+  }
 }

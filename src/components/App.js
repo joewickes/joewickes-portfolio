@@ -5,12 +5,10 @@ import {Component} from 'react';
 import './../styles/App.css'
 
 // Components
-import Header from './Header';
 import Landing from './Landing';
 import Contact from './Contact';
 import ProjectSection from './ProjectSection';
 import AboutMe from './AboutMe';
-import Footer from './Footer';
 
 export default class App extends Component {
 
@@ -24,7 +22,6 @@ export default class App extends Component {
           <AboutMe />
           <Contact />
         </main>
-      <Footer />
       </>
     );
   }
