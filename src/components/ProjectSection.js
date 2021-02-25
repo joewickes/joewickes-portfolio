@@ -7,32 +7,37 @@ import './../styles/ProjectSection.css'
 // Components 
 import Project from './Project';
 
+// Images
+import SS1 from './../images/SS1.png';
+import SS2 from './../images/SS2.png';
+import SS3 from './../images/SS3.png';
+
 export default class ProjectSection extends Component {
   state = {
     projectArr: [
       {
-        screenshot: './images/SS1.png',
+        screenshot: SS1,
         title: 'Date Ideas',
         liveLink: 'https://date-ideas.vercel.app/',
-        description: 'Date ideas is an app that generates random date ideas in the categories: Activities, meals, and desserts',
+        description: 'Get random date ideas in the categories: Activities, meals, and desserts',
         techUsed: ['React', 'Express', 'Knex', 'PostgreSQL'],
         frontEndRepo: 'https://github.com/joewickes/date-ideas',
         backEndRepo: 'https://github.com/joewickes/date-ideas-api',
       },
       {
-        screenshot: './images/SS2.png',
+        screenshot: SS2,
         title: 'MovieRec',
         liveLink: 'https://movierec-frontend.vercel.app/',
-        description: 'MovieRec is an app that lets you recommend movies to family, friends, or strangers',
+        description: 'Recommend movies to family, friends, or strangers',
         techUsed: ['React', 'Express', 'Knex', 'PostgreSQL'],
         frontEndRepo: 'https://github.com/joewickes/movierec-frontend',
         backEndRepo: 'https://github.com/joewickes/movierec-backend',
       },
       {
-        screenshot: './images/SS3.png',
+        screenshot: SS3,
         title: 'Movie Quote Quiz',
         liveLink: 'https://joewickes.github.io/movie-quote-quiz-app/',
-        description: 'A quiz that tests your movie quote knowledge',
+        description: 'Test your movie quote knowledge',
         techUsed: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
         frontEndRepo: 'https://github.com/joewickes/movie-quote-quiz-app',
         backEndRepo: null,

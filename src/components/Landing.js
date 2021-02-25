@@ -12,6 +12,9 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaListAlt } from 'react-icons/fa';
 
+// Resume
+import Resume from './../images/Resume.pdf';
+
 export default class Landing extends Component {
   render() {
     return (
@@ -35,7 +38,7 @@ export default class Landing extends Component {
                 <a href="https://www.linkedin.com/in/joe-wickes/" target="_blank"><FaLinkedin className="faLinkedin" /></a>
               </div>
               <div>
-                <a href="" target="_blank"><FaListAlt className="faListalt" /></a>
+                <a href={Resume} target="_blank"><FaListAlt className="faListalt" /></a>
               </div>
               {/* Icons */}
             </div>

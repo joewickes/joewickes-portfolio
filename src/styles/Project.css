@@ -1,1 +1,55 @@
- 
+.Project {
+  display: flex;
+  width: 50%;
+  margin: 0px;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.proj-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.proj-left h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.proj-left p {
+  text-align: right;
+  font-weight: 200;
+}
+
+.proj-left a {
+  color: #d10102;
+  font-weight: 200;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #d10102;
+}
+
+.proj-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.proj-left button {
+  margin: 10px 0px;
+  padding: 9px;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.proj-left button:hover {
+  cursor: pointer;
+}
