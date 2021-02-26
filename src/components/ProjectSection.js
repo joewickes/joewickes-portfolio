@@ -52,6 +52,7 @@ export default class ProjectSection extends Component {
         <ul className="project-list">
           {this.state.projectArr.map(project => {
             return (<Project 
+              key={project.title}
               screenshot={project.screenshot} 
               title={project.title} 
               liveLink={project.liveLink} 

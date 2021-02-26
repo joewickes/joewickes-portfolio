@@ -17,7 +17,7 @@
 
 .am-left {
   display: flex;
-  padding: 0px 50px 50px 50px;
+  padding: 0px 60px 60px 60px;
   align-items: center;
 }
 
@@ -37,18 +37,23 @@
   text-align: center;
 }
 
+@media all and (min-width: 480px) {
+  .am-left {
+    flex: 1;
+    padding: 0px 25vw 50px 25vw;
+    align-items: center;
+  }
+}
+
 
 
 @media all and (min-width: 800px) {
-
-
   .am-bottom {
     flex-direction: row;
   }
 
   .am-left {
     flex: 1;
-    align-items: center;
     padding: 50px;
     align-items: center;
   }
