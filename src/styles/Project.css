@@ -38,6 +38,10 @@ img {
   text-decoration-color: #d10102;
 }
 
+.proj-left button a {
+  text-decoration: none;
+}
+
 .proj-img {
   flex: 1;
   flex-direction: column;
