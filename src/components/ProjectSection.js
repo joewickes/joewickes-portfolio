@@ -8,9 +8,9 @@ import './../styles/ProjectSection.css'
 import Project from './Project';
 
 // Images
-import SS1 from './../images/SS1.png';
-import SS2 from './../images/SS2.png';
-import SS3 from './../images/SS3.png';
+import SS1 from './../images/SS1.gif';
+import SS2 from './../images/SS2.gif';
+import SS3 from './../images/SS3.gif';
 
 export default class ProjectSection extends Component {
   state = {
