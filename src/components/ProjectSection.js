@@ -16,7 +16,7 @@ export default class ProjectSection extends Component {
   state = {
     projectArr: [
       {
-        screenshot: SS3,
+        screenshot: SS4,
         title: "Jobspark Add Inventory Page",
         liveLink: null,
         description:
@@ -44,6 +44,16 @@ export default class ProjectSection extends Component {
         techUsed: ["React", "Express", "Knex", "PostgreSQL"],
         frontEndRepo: "https://github.com/joewickes/movierec-frontend",
         backEndRepo: "https://github.com/joewickes/movierec-backend",
+      },
+      {
+        screenshot: SS3,
+        title: "Movie Quote Quiz",
+        liveLink: "https://joewickes.github.io/movie-quote-quiz-app/",
+        description:
+          'A jQuery project built to simulate "React-ful" rendering for the Thinkful program, testing your movie quote knowledge',
+        techUsed: ["HTML", "CSS", "JavaScript", "jQuery"],
+        frontEndRepo: "https://github.com/joewickes/movie-quote-quiz-app",
+        backEndRepo: null,
       },
     ],
   };
