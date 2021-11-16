@@ -14,15 +14,17 @@
   flex-direction: column-reverse;
 }
 
-
 .am-left {
   display: flex;
   padding: 0px 60px 60px 60px;
   align-items: center;
+  justify-content: center;
 }
 
 .am-left img {
-  border-radius: 50%; 
+  border-radius: 50%;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .am-right {
@@ -44,8 +46,6 @@
     align-items: center;
   }
 }
-
-
 
 @media all and (min-width: 800px) {
   .am-bottom {
