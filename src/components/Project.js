@@ -1,40 +1,64 @@
 // Dependencies
-import {Component} from 'react';
+import React from "react";
 
 // Styles
-import './../styles/Project.css'
+import "./../styles/Project.css";
 
-export default class Project extends Component {
-  render() {
+const Project = (props) => {
+  const makeTechString = (array) => {
+    let finStr = "";
 
-    const makeTechString = (array) => {
-      let finStr = '';
-
-      for (let i = 0; i < array.length; i++) {
-        if (i === array.length - 1) {
-          finStr += array[i];
-        } else {
-          finStr += `${array[i]} | `;
-        }
+    for (let i = 0; i < array.length; i++) {
+      if (i === array.length - 1) {
+        finStr += array[i];
+      } else {
+        finStr += `${array[i]} | `;
       }
-
-      return finStr;
     }
 
-    return (
-      <li className="Project">
-        <div className="proj-left">
-          <h3>{this.props.title}</h3>
-          <p className="description"><b>Description: </b>{this.props.description}</p>
-          <p><b>Tech Stack Used:</b> {makeTechString(this.props.techUsed)}</p>
-          <button><a href={this.props.liveLink} rel="noreferrer" target="_blank">See it in Action</a></button>
-          <a href={this.props.frontEndRepo} rel="noreferrer" target="_blank">Client Side Repo</a>
-          {this.props.backEndRepo ? (<a href={this.props.backEndRepo} rel="noreferrer" target="_blank">Server Side Repo</a>) : null}
-        </div>
+    return finStr;
+  };
+
+  return (
+    <li className="Project">
+      <div className="proj-left">
+        {!!props.title ? <h3>{props.title}</h3> : null}
+        {!!props.description ? (
+          <p className="description">
+            <b>Description: </b>
+            {props.description}
+          </p>
+        ) : null}
+        {!!props.techUsed ? (
+          <p>
+            <b>Tech Stack Used:</b> {makeTechString(props.techUsed)}
+          </p>
+        ) : null}
+        {!!props.liveLink ? (
+          <button>
+            <a href={props.liveLink} rel="noreferrer" target="_blank">
+              See it in Action
+            </a>
+          </button>
+        ) : null}
+        {!!props.frontEndRepo ? (
+          <a href={props.frontEndRepo} rel="noreferrer" target="_blank">
+            Client Side Repo
+          </a>
+        ) : null}
+        {props.backEndRepo ? (
+          <a href={props.backEndRepo} rel="noreferrer" target="_blank">
+            Server Side Repo
+          </a>
+        ) : null}
+      </div>
+      {!!props.screenshot && !!props.title ? (
         <div className="proj-img">
-          <img src={this.props.screenshot} alt={this.props.title} />
+          <img src={props.screenshot} alt={props.title} />
         </div>
-      </li>
-    );
-  }
-}
+      ) : null}
+    </li>
+  );
+};
+
+export default Project;
