@@ -16,6 +16,16 @@ export default class ProjectSection extends Component {
   state = {
     projectArr: [
       {
+        screenshot: SS3,
+        title: "Jobspark Add Inventory Page",
+        liveLink: null,
+        description:
+          "The Add Inventory Page for a job tracking software, tracking different part types, users, needed quantities, and current inventories",
+        techUsed: ["JavaScript", "React", "SASS", "Express"],
+        frontEndRepo: null,
+        backEndRepo: null,
+      },
+      {
         screenshot: SS1,
         title: "Date Ideas",
         liveLink: "https://date-ideas.vercel.app/",
@@ -34,16 +44,6 @@ export default class ProjectSection extends Component {
         techUsed: ["React", "Express", "Knex", "PostgreSQL"],
         frontEndRepo: "https://github.com/joewickes/movierec-frontend",
         backEndRepo: "https://github.com/joewickes/movierec-backend",
-      },
-      {
-        screenshot: SS3,
-        title: "Jobspark Inventory Page",
-        liveLink: null,
-        description:
-          'A React project built to simulate "React-ful" rendering for the Thinkful program, testing your movie quote knowledge',
-        techUsed: ["JavaScript", "React", "SASS", "Express"],
-        frontEndRepo: null,
-        backEndRepo: null,
       },
     ],
   };
