@@ -11,6 +11,7 @@ import Project from "./Project";
 import SS1 from "./../images/SS1.gif";
 import SS2 from "./../images/SS2.gif";
 import SS3 from "./../images/SS3.gif";
+import SS4 from "./../images/SS4.gif";
 
 export default class ProjectSection extends Component {
   state = {
