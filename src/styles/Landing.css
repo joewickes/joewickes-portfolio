@@ -1,5 +1,5 @@
 .Landing {
-  height: 90vh;
+  height: 93vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,12 +8,12 @@
 }
 
 .l-container {
-  height: 90vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 0px 20px;
+  justify-content: flex-start;
+  padding: 25vh 20px 0px 20px;
 }
 
 .l-name-container {
@@ -30,6 +30,7 @@
 
 .l-blurb-container p {
   font-weight: 200;
+  padding-bottom: 75px;
 }
 
 .l-icons-container {

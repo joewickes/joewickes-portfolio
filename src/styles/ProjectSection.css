@@ -5,11 +5,16 @@
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
+  box-shadow: #aaa 0px 5px 10px !important;
 }
 
 .ProjectSection h2 {
-  padding: 50px 0px 0px 15px;
+  padding: 25px 0px 25px 0px;
   font-size: 30px;
+}
+
+.ProjectSection .carousel-root {
+  max-width: 80vw;
 }
 
 .project-list {

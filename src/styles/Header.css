@@ -1,9 +1,11 @@
 .l-header {
-  height: 10vh;
+  max-height: 70px;
+  min-height: 70px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: #e5e5e5;
+  box-shadow: #aaa 0px 3px 10px !important;
 }
 
 .l-header nav {
@@ -23,7 +25,7 @@
 }
 
 .l-header p:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -41,6 +43,6 @@
 
 @media all and (min-width: 800px) {
   .l-header nav {
-    width: 25vw;
+    width: 300px;
   }
 }
